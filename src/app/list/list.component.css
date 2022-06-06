@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+  }
+  
+.mat-column-focus {
+    padding: 10px;
+}
+.mat-column-image {
+  padding: 10px;
+}
+.mat-column-description {
+ word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 40% !important;
+  width: 40% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 10px;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.hoverImage {
+    width: 450px !important;
+}

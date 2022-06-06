@@ -1,4 +1,10 @@
-table {
-    width: 100%;
-  }
-  
+.example-card {
+  max-width: 400px;
+  margin: 20px; 
+  float:left;
+}
+
+.example-header-image {
+  background-image: url('../../assets/images/1635269207750.jpeg');
+  background-size: cover;
+}

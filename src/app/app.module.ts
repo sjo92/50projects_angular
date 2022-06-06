@@ -11,12 +11,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ListComponent } from './list/list.component';
+import { HoverClassDirective } from './directive/hover-class.directive';
+import { ContactsComponent } from './contacts/contacts.component';
+import { RedirectGuard } from './directive/redirectGuard';
+
+
+//Directive
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ListComponent,
+    HoverClassDirective,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +37,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ReactiveFormsModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [RedirectGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,9 @@
 export interface Project{
     name: string;
     position: number;
-    weight: number;
-    symbol: string;
+    description: string;
+    image: string;
+    focus: string;
+    router: string;
   }
   
