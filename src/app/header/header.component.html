@@ -1,8 +1,36 @@
 <mat-toolbar>
-    <mat-icon style="margin-left: 20px; margin-right: 5px" aria-hidden="false" aria-label="Example home icon">terminal</mat-icon> <span> 50 Projects</span>
-    <div style="margin-left: 20px; margin-right: 5px">
-        <a mat-button [routerLink]="['/home']"> Overview </a>
-        <a mat-button [routerLink]="['/list']"> List </a>
-        <a mat-button [routerLink]="['/contacts']"> Contacts </a>
-      </div>
-  </mat-toolbar>
+    <div fxFlex="78" fxLayout="row" class="icon-text">
+        <div fxLayout="column">
+            <mat-icon style="margin-left: 20px; margin-right: 5px" aria-hidden="false" aria-label="Example home icon">
+                terminal</mat-icon>
+        </div>
+
+        <div fxLayout="column">
+            <div fxLayout="row">
+            <span> 50 Projects </span>
+            <div style="margin-left: 5px;"></div>
+            <div style="font-size: 12px;"> by Seulgi Jo</div>
+            </div>
+        </div>
+
+        <div fxFlex="80" fxLayout="column">
+            <div fxFill style="margin-left: 40px; margin-right: 10px">
+                <a mat-button [routerLink]="['/home']"> Overview </a>
+                <a mat-button [routerLink]="['/list']"> List </a>
+                <a mat-button [routerLink]="['/contacts']"> Contacts </a>
+            </div>
+        </div>
+
+    <div fxFill fxLayout="column" class="icon-text">
+        <div fxLayout="row">
+            <a href="https://www.linkedin.com/in/seulgi-jo/">
+            <i class="fa-brands fa-linkedin-in" style="margin-right:10px; color:black;"></i>
+            </a>
+            <a href="https://github.com/sjo92"> 
+            <i class="fa-brands fa-github" style="margin-right:10px; color:black;"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+
+</mat-toolbar>

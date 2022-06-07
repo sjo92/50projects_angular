@@ -1,3 +1,31 @@
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="seulgi-jo" data-version="v1">
-    <a class="badge-base__link LI-simple-link" href="https://de.linkedin.com/in/seulgi-jo?trk=profile-badge">Seulgi Jo</a></div>
-              
+<ng-container>
+    <div style="margin: 30px 20px;">
+    <h2 mat-dialog-title class="dialog-header">Contact us</h2>
+    <mat-dialog-content [formGroup]="FormData">
+
+    <form [formGroup]="FormData" (ngSubmit)="sendEmail(FormData.value)">
+
+    <div fxLayout="row">
+        <mat-form-field fxFlex="25">
+            <input matInput type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter your mail"formControlName="Email" />
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row">
+        <mat-form-field fxFlex="25">
+            <input matInput type="text" class="form-control" name="Name" placeholder="Your Name"formControlName="Name" />
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row">
+        <mat-form-field fxFlex="25">
+            <textarea matInput type="text" class="form-control longtext" name="Comment" placeholder="Enter your message"formControlName="Comment"></textarea>
+        </mat-form-field>
+    </div>
+
+    <button type="submit"  mat-raised-button color="primary"[disabled]="!FormData.valid">Submit</button>
+    </form>
+
+    </mat-dialog-content>
+</div>
+</ng-container>

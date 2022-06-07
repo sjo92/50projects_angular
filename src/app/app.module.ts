@@ -15,8 +15,8 @@ import { ListComponent } from './list/list.component';
 import { HoverClassDirective } from './directive/hover-class.directive';
 import { ContactsComponent } from './contacts/contacts.component';
 import { RedirectGuard } from './directive/redirectGuard';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 //Directive
 
 @NgModule({
@@ -35,7 +35,9 @@ import { RedirectGuard } from './directive/redirectGuard';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [RedirectGuard],
   bootstrap: [AppComponent]
